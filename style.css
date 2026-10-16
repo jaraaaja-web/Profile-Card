@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #050505, #221177, #4B1664);
+    padding: 20px;
+    overflow-x: hidden;
+}
+ 
+.background {
+    display: none;
+}
+
+.background .shape {
+    display: none;
+}
+
+
+.shape:first-child {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(#ff512f, #dd2476);
+    top: 10%;
+    left: 15%;
+}
+
+.shape:last-child {
+    width: 180px;
+    height: 180px;
+    background: linear-gradient(#221177, #88AAFF);
+    bottom: 10%;
+    right: 15%;
+}
+
+.wrapper {
+    width: 380px;
+    max-width: 100%;
+    padding: 30px;
+    border-radius: 20px;
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.info-box {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 30px;
+}
+
+.info-box img {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgba(255, 255, 255, 0.6);
+}
+
+.info h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.info p {
+    font-size: 13px;
+    color: #d0d8e8;
+    margin-top: 5px;
+}
+
+.numbers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.box {
+    padding: 15px 5px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+}
+
+.box p {
+    font-size: 11px;
+    color: #d0d8e8;
+}
+
+.box h3 {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.about h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.about p {
+    font-size: 13px;
+    line-height: 1.7;
+    color: #d0d8e8;
+}
+
+.buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.buttons button {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.12);
+    color: white;
+    font-family: inherit;
+    cursor: pointer;
+    transition: 0.3s;
+}
